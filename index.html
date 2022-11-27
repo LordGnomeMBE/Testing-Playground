@@ -1,18 +1,66 @@
 <!DOCTYPE html>
 <html>
+<head>
 <script src="https://www.unpkg.com/@panzoom/panzoom/dist/panzoom.js"></script>
+</head>
+<style>
+#myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 90%;
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 0px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  padding: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin:40px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+</style>
+</head>
 <body>
 
-<div style="margin:40px;border:3px solid black;background-color:#b3dbf7;">
-<div id="panzoom" style="margin:0px;">
+
+<table>
+  <tr>
+    <th style="width:550px"><div style="border:3px solid black;background-color:#b3dbf7;width:500px;">
+<div id="panzoom">
 
 <svg
    version="1.1"
+   
    id="svg123"
    width="500px"
-   height="400px"
+   height="500px"
    viewBox="0 0 1687 2048"
-   style="display: block;margin: auto;"
+   style="float:left;display: inline-block;vertical-align: top;"
    sodipodi:docname="English_ceremonial_counties_2010.svg"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -332,10 +380,83 @@
     </a>
   </g>
 </svg>
-
 	</div>
-    </div>
-</body>
+    </div></th>
+    <th><h1 style="font-family: 'Playfair Display';font-size:50px;color:red;">England</h1><p1><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for counties.." title="Type in a County name">
+
+<ul id="myUL">
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Bedfordshire.html">Bedfordshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Berkshire.html">Berkshire</a></li>
+
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Bristol.html">Bristol</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Buckinghamshire.html">Buckinghamshiren</a></li>
+
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Cambridgeshire.html">Cambridgeshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Cheshire.html">Cheshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/London.html">City of London</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Cornwall.html">Cornwall</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Cumbria.html">Cumbria</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Derbyshire.html">Derbyshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Devon.html">Devon</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Dorset.html">Dorset</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Durham.html">Durham</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/EastYorkshire.html">East Riding of Yorkshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/EastSussex.html">East Sussex</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Essex.html">Essex</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Gloucestershire.html">Gloucestershire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/London.html">Greater London</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Manchester.html">Greater Manchester</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Hampshire.html">Hampshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Herefordshire.html">Herefordshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Hertfordshire.html">Hertfordshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Hampshire.html">Isle of Wight</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Kent.html">Kent</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Lancashire.html">Lancashire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Leicestershire.html">Leicestershire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Lincolnshire.html">Lincolnshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Merseyside.html">Merseyside</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Norfolk.html">Norfolk</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/NorthYorkshire.html">North Yorkshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Northamptonshire.html">Northamptonshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Nottinghamshire.html">Nottinghamshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Oxfordshire.html">Oxfordshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Rutland.html">Rutland</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Shropshire.html">Shropshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Somerset.html">Somerset</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/SouthYorkshire.html">South Yorkshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Staffordshire.html">Staffordshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Suffolk.html">Suffolk</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Surrey.html">Surrey</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/TyneWear.html">Tyne and Wear</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Warwickshire.html">Warwickshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/WestMidlands.html">West Midlands</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/WestSussex.html">West Sussex</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/WestYorkshire.html">West Yorkshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Wiltshire.html">Wiltshire</a></li>
+  <li><a href="https://lordgnomembe.github.io/LocalHistory/Worcestershire.html">Worcestershire</a></li>
+</ul>
+</p1></th>
+  </tr>
+</table>
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
 <script>
 const element = document.getElementById('panzoom')
 const panzoom = Panzoom(element, {
@@ -346,4 +467,7 @@ const panzoom = Panzoom(element, {
 const parent = element.parentElement
 parent.addEventListener('wheel', panzoom.zoomWithWheel);
 </script>
+
+</body>
 </html>
+
