@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="myText" value="Search Query"> <button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  var url = "https://lordgnomembe.github.io/SearchEngineSelect/#" + x;
+  document.getElementById("demo").innerHTML =  "<meta http-equiv='refresh' content='0; url='" + url + "'' />;"
+}
+</script>
+
+</body>
+</html>
